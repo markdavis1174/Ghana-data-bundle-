@@ -1,279 +1,516 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CampusDataGH | Cheap Data Bundles in Ghana</title>
-  <meta name="description" content="Buy affordable MTN, Telecel & AirtelTigo data bundles in Ghana instantly with CampusDataGH." />
-  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- SEO TITLE -->
+  <title>CampusDataGH - Cheap MTN, Telecel & AirtelTigo Data Bundles Ghana</title>
+
+  <!-- SEO META -->
+  <meta name="description" content="CampusDataGH offers cheap MTN, Telecel and AirtelTigo data bundles in Ghana with fast activation, secure payment and affordable internet packages." />
+
+  <meta name="keywords" content="CampusDataGH, Ghana data bundles, cheap MTN bundles, AirtelTigo bundles Ghana, Telecel bundles, affordable data Ghana, internet bundles Ghana, buy data online Ghana" />
+
+  <meta name="author" content="CampusDataGH" />
+
+  <meta name="robots" content="index, follow" />
+
+  <!-- OPEN GRAPH SEO -->
+  <meta property="og:title" content="CampusDataGH - Cheap Ghana Data Bundles" />
+  <meta property="og:description" content="Buy affordable MTN, Telecel and AirtelTigo data bundles online in Ghana with instant activation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.campusdatagh.com" />
+  <meta property="og:image" content="favicon.png" />
+
+  <!-- TWITTER SEO -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CampusDataGH" />
+  <meta name="twitter:description" content="Cheap and fast Ghana data bundles online." />
+  <meta name="twitter:image" content="favicon.png" />
+
+  <!-- CANONICAL -->
+  <link rel="canonical" href="https://www.campusdatagh.com" />
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
     }
 
-    body {
-      background: #0b1220;
-      color: white;
-      overflow-x: hidden;
+    html{
+      scroll-behavior:smooth;
     }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 8%;
-      background: rgba(0,0,0,0.5);
-      backdrop-filter: blur(10px);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+    body{
+      background:#050816;
+      color:white;
+      overflow-x:hidden;
     }
 
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
-      color: #00ff99;
+    .glow{
+      position:fixed;
+      width:500px;
+      height:500px;
+      background:linear-gradient(45deg,#00ffcc,#0066ff);
+      filter:blur(150px);
+      opacity:0.2;
+      top:-150px;
+      right:-100px;
+      z-index:-1;
     }
 
-    nav a {
-      text-decoration: none;
-      color: white;
-      margin-left: 20px;
-      font-size: 15px;
-      transition: 0.3s;
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 8%;
+      position:sticky;
+      top:0;
+      background:rgba(5,8,22,0.9);
+      backdrop-filter:blur(10px);
+      z-index:1000;
+      border-bottom:1px solid rgba(255,255,255,0.08);
     }
 
-    nav a:hover {
-      color: #00ff99;
+    .logo{
+      font-size:28px;
+      font-weight:800;
+      background:linear-gradient(to right,#00ffcc,#00a2ff);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
     }
 
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 40px 8%;
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
-      url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop');
-      background-size: cover;
-      background-position: center;
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      transition:0.3s;
+      font-weight:500;
     }
 
-    .hero-content {
-      max-width: 800px;
+    nav a:hover{
+      color:#00ffcc;
     }
 
-    .hero h1 {
-      font-size: 60px;
-      margin-bottom: 20px;
-      line-height: 1.1;
+    .hero{
+      padding:100px 8%;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      align-items:center;
+      gap:50px;
     }
 
-    .hero h1 span {
-      color: #00ff99;
+    .hero h1{
+      font-size:60px;
+      line-height:1.1;
+      margin-bottom:20px;
     }
 
-    .hero p {
-      font-size: 20px;
-      line-height: 1.6;
-      margin-bottom: 35px;
-      color: #ddd;
+    .hero h1 span{
+      color:#00ffcc;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 16px 35px;
-      background: #00ff99;
-      color: black;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 50px;
-      transition: 0.3s;
-      font-size: 18px;
-      box-shadow: 0 0 20px rgba(0,255,153,0.4);
+    .hero p{
+      color:#c7d0df;
+      line-height:1.8;
+      margin-bottom:30px;
+      font-size:17px;
     }
 
-    .btn:hover {
-      transform: translateY(-4px);
-      background: white;
+    .btn{
+      display:inline-block;
+      padding:15px 30px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:700;
+      transition:0.3s;
     }
 
-    .features {
-      padding: 80px 8%;
-      background: #111827;
+    .btn-primary{
+      background:linear-gradient(45deg,#00ffcc,#0066ff);
+      color:white;
+      box-shadow:0 10px 25px rgba(0,255,204,0.3);
     }
 
-    .section-title {
-      text-align: center;
-      font-size: 40px;
-      margin-bottom: 50px;
-      color: #00ff99;
+    .btn-primary:hover{
+      transform:translateY(-5px);
     }
 
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
+    .hero img{
+      width:100%;
+      border-radius:30px;
+      box-shadow:0 20px 60px rgba(0,0,0,0.5);
     }
 
-    .feature-box {
-      background: #1f2937;
-      padding: 35px 25px;
-      border-radius: 20px;
-      text-align: center;
-      transition: 0.3s;
-      border: 1px solid rgba(255,255,255,0.08);
+    section{
+      padding:80px 8%;
     }
 
-    .feature-box:hover {
-      transform: translateY(-10px);
-      border-color: #00ff99;
-      box-shadow: 0 10px 30px rgba(0,255,153,0.15);
+    .title{
+      text-align:center;
+      margin-bottom:50px;
     }
 
-    .feature-box h3 {
-      margin: 20px 0 15px;
-      font-size: 24px;
-      color: #00ff99;
+    .title h2{
+      font-size:42px;
+      margin-bottom:10px;
     }
 
-    .feature-box p {
-      color: #ccc;
-      line-height: 1.6;
+    .title p{
+      color:#c7d0df;
     }
 
-    .cta {
-      padding: 90px 8%;
-      text-align: center;
-      background: linear-gradient(135deg, #00ff99, #00c3ff);
-      color: black;
+    .bundle-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
     }
 
-    .cta h2 {
-      font-size: 45px;
-      margin-bottom: 20px;
+    .card{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:25px;
+      padding:30px;
+      transition:0.3s;
+      position:relative;
+      overflow:hidden;
     }
 
-    .cta p {
-      font-size: 20px;
-      margin-bottom: 35px;
+    .card::before{
+      content:'';
+      position:absolute;
+      width:120px;
+      height:120px;
+      background:#00ffcc;
+      filter:blur(90px);
+      top:-20px;
+      right:-20px;
+      opacity:0.3;
     }
 
-    .cta .btn {
-      background: black;
-      color: white;
-      box-shadow: none;
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#00ffcc;
     }
 
-    footer {
-      background: black;
-      padding: 30px;
-      text-align: center;
-      color: #aaa;
-      font-size: 15px;
+    .network{
+      color:#00ffcc;
+      font-size:14px;
+      font-weight:700;
+      margin-bottom:10px;
     }
 
-    @media(max-width: 768px) {
-      .hero h1 {
-        font-size: 40px;
+    .card h3{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .price{
+      font-size:30px;
+      font-weight:700;
+      margin-bottom:15px;
+    }
+
+    .card ul{
+      list-style:none;
+      margin-bottom:25px;
+    }
+
+    .card ul li{
+      margin-bottom:10px;
+      color:#d2d9e6;
+    }
+
+    .buy-btn{
+      display:block;
+      text-align:center;
+      background:linear-gradient(45deg,#00ffcc,#0066ff);
+      color:white;
+      text-decoration:none;
+      padding:14px;
+      border-radius:50px;
+      font-weight:700;
+      transition:0.3s;
+    }
+
+    .buy-btn:hover{
+      transform:scale(1.03);
+    }
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .feature-box{
+      background:rgba(255,255,255,0.04);
+      border-radius:25px;
+      padding:30px;
+      border:1px solid rgba(255,255,255,0.08);
+      transition:0.3s;
+    }
+
+    .feature-box:hover{
+      transform:translateY(-8px);
+      border-color:#00ffcc;
+    }
+
+    .feature-box h4{
+      margin:15px 0;
+      font-size:22px;
+    }
+
+    .feature-box p{
+      color:#c7d0df;
+      line-height:1.7;
+    }
+
+    footer{
+      padding:40px 8%;
+      text-align:center;
+      border-top:1px solid rgba(255,255,255,0.08);
+      color:#c7d0df;
+    }
+
+    @media(max-width:768px){
+
+      .hero{
+        padding-top:60px;
       }
 
-      .hero p {
-        font-size: 17px;
+      .hero h1{
+        font-size:42px;
       }
 
-      nav {
-        display: none;
+      nav{
+        display:none;
       }
     }
+
   </style>
 </head>
+
 <body>
 
-  <header>
-    <div class="logo">CampusDataGH</div>
+<div class="glow"></div>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#features">Features</a>
-      <a href="#buy">Buy Data</a>
-    </nav>
-  </header>
+<header>
 
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Fast & Affordable <span>Data Bundles</span> In Ghana</h1>
+  <div class="logo">CampusDataGH</div>
 
-      <p>
-        Buy MTN, AirtelTigo & Telecel data bundles instantly at cheap prices.
-        Trusted by students and online users across Ghana.
-      </p>
+  <nav>
+    <a href="#bundles">Bundles</a>
+    <a href="#features">Features</a>
+    <a href="#buy">Buy Now</a>
+  </nav>
 
-      <a href="https://www.cheapdata.shop/shop/ghana-data-bundle" class="btn" target="_blank">
-        Buy Data Now
-      </a>
-    </div>
-  </section>
+</header>
 
-  <section class="features" id="features">
-    <h2 class="section-title">Why Choose CampusDataGH?</h2>
+<section class="hero">
 
-    <div class="feature-grid">
+  <div>
 
-      <div class="feature-box">
-        <h3>Instant Delivery</h3>
-        <p>
-          Receive your data bundles quickly after payment without delays.
-        </p>
-      </div>
-
-      <div class="feature-box">
-        <h3>Cheap Prices</h3>
-        <p>
-          Enjoy affordable data bundle deals for all major networks in Ghana.
-        </p>
-      </div>
-
-      <div class="feature-box">
-        <h3>Secure Payments</h3>
-        <p>
-          Safe and reliable mobile money payment experience for all customers.
-        </p>
-      </div>
-
-      <div class="feature-box">
-        <h3>24/7 Access</h3>
-        <p>
-          Buy data anytime and anywhere directly from your phone.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="cta" id="buy">
-    <h2>Ready To Buy Cheap Data?</h2>
+    <h1>
+      Cheap <span>MTN, Telecel & AirtelTigo</span> Data Bundles In Ghana
+    </h1>
 
     <p>
-      Click below and enjoy fast internet bundles from CampusDataGH.
+      CampusDataGH provides affordable and fast internet bundles in Ghana with instant activation, secure ordering and reliable customer support for all networks.
     </p>
 
-    <a href="https://www.cheapdata.shop/shop/ghana-data-bundle" class="btn" target="_blank">
-      Get Started
+    <a href="https://www.cheapdata.shop/shop/ghana-data-bundle" class="btn btn-primary">
+      Buy Data Now
     </a>
-  </section>
 
-  <footer>
-    © 2026 CampusDataGH.com | All Rights Reserved
-  </footer>
+  </div>
+
+  <div>
+    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop"
+    alt="CampusDataGH Cheap Ghana Data Bundles">
+  </div>
+
+</section>
+
+<section id="bundles">
+
+  <div class="title">
+    <h2>Popular Data Bundles</h2>
+
+    <p>
+      Buy affordable internet bundles online in Ghana instantly.
+    </p>
+  </div>
+
+  <div class="bundle-grid">
+
+    <div class="card">
+
+      <div class="network">MTN Bundle</div>
+
+      <h3>5GB</h3>
+
+      <div class="price">GH₵ 20</div>
+
+      <ul>
+        <li>Fast Delivery</li>
+        <li>Affordable Price</li>
+        <li>Reliable Activation</li>
+      </ul>
+
+      <a href="https://www.cheapdata.shop/shop/ghana-data-bundle" class="buy-btn">
+        Purchase Bundle
+      </a>
+
+    </div>
+
+    <div class="card">
+
+      <div class="network">MTN Bundle</div>
+
+      <h3>10GB</h3>
+
+      <div class="price">GH₵ 35</div>
+
+      <ul>
+        <li>Instant Activation</li>
+        <li>Trusted Service</li>
+        <li>24/7 Support</li>
+      </ul>
+
+      <a href="https://www.cheapdata.shop/shop/ghana-data-bundle" class="buy-btn">
+        Purchase Bundle
+      </a>
+
+    </div>
+
+    <div class="card">
+
+      <div class="network">Telecel Bundle</div>
+
+      <h3>15GB</h3>
+
+      <div class="price">GH₵ 50</div>
+
+      <ul>
+        <li>Quick Processing</li>
+        <li>Affordable Deals</li>
+        <li>Secure Purchase</li>
+      </ul>
+
+      <a href="https://www.cheapdata.shop/shop/ghana-data-bundle" class="buy-btn">
+        Purchase Bundle
+      </a>
+
+    </div>
+
+    <div class="card">
+
+      <div class="network">AirtelTigo Bundle</div>
+
+      <h3>20GB</h3>
+
+      <div class="price">GH₵ 70</div>
+
+      <ul>
+        <li>Premium Speed</li>
+        <li>Trusted Seller</li>
+        <li>Fast Support</li>
+      </ul>
+
+      <a href="https://www.cheapdata.shop/shop/ghana-data-bundle" class="buy-btn">
+        Purchase Bundle
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="features">
+
+  <div class="title">
+
+    <h2>
+      Why Choose CampusDataGH
+    </h2>
+
+    <p>
+      Trusted by customers across Ghana for cheap and reliable internet bundles.
+    </p>
+
+  </div>
+
+  <div class="features">
+
+    <div class="feature-box">
+      <h4>⚡ Instant Activation</h4>
+      <p>
+        Your purchased data bundle is activated quickly and securely.
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <h4>💰 Affordable Prices</h4>
+      <p>
+        Buy cheap MTN, Telecel and AirtelTigo bundles at competitive prices.
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <h4>🔒 Secure & Trusted</h4>
+      <p>
+        CampusDataGH is designed to provide safe and professional online transactions.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="buy">
+
+  <div class="title">
+
+    <h2>Start Buying Data Now</h2>
+
+    <p>
+      Access affordable Ghana internet bundles instantly.
+    </p>
+
+  </div>
+
+  <div style="text-align:center;">
+
+    <a href="https://www.cheapdata.shop/shop/ghana-data-bundle" class="btn btn-primary">
+      Visit Store
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>
+    © 2024-2026 CampusDataGH.com — All Rights Reserved.
+  </p>
+</footer>
 
 </body>
-</html>
-
-
+  </html>
